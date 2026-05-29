@@ -1,0 +1,20 @@
+input_folder: "C:\\Users\\michael.pardob\\Downloads\\Photos-2021" # folder containing original media
+output_folder: "C:\\Users\\michael.pardob\\Downloads\\CleanDataFromv3" # will create people/ and nopeople/ inside
+operation: "copy" # "copy" or "move"
+confidence_threshold: 0.6 # YOLO detection confidence
+full_body_keypoint_threshold: 0.5 # MediaPipe visibility
+min_body_parts:
+  [
+    "left_ankle",
+    "right_ankle",
+    "left_shoulder",
+    "right_shoulder",
+    "left_hip",
+    "right_hip",
+  ]
+min_human_bbox_area_ratio: 0.05 # 5% of image area
+min_bbox_aspect_ratio: 1.2 # height/width — rejects crouching/lying poses
+video_sample_fps: 1.0
+device: "cpu" # or "cuda" if GPU available
+num_workers: 4 # parallel processing
+log_level: "INFO"
