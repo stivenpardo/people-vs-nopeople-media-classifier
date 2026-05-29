@@ -1,5 +1,5 @@
-input_folder: "C:\\Users\\michael.pardob\\Downloads\\Photos-2021" # folder containing original media
-output_folder: "C:\\Users\\michael.pardob\\Downloads\\CleanDataFromv3" # will create people/ and nopeople/ inside
+input_folder: "C:\\Users\\michael.pardob\\Downloads\\Photos-january-may-2026" # folder containing original media
+output_folder: "C:\\Users\\michael.pardob\\Downloads\\CleanDataFromv3-4" # will create people/ and nopeople/ inside
 operation: "copy" # "copy" or "move"
 confidence_threshold: 0.6 # YOLO detection confidence
 full_body_keypoint_threshold: 0.5 # MediaPipe visibility
